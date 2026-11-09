@@ -68,6 +68,7 @@ body {
 .main-top {
   padding: 132px 0 80px 0;
   font-size: 0;
+  display: inline-block;
 }
 
 .main-top-info {
@@ -108,9 +109,15 @@ body {
 
 .main-top-image {
   display: inline-block;
-  max-width: 590px;
+  max-width: 605px;
   margin-left: 29px;
+  margin-top: 165px;
   vertical-align: middle;
+}
+
+.main-top-image img {
+  width: 100%;
+  object-fit: contain;
 }
 
 .main-top-image figcaption {
@@ -125,14 +132,18 @@ body {
 
 .main-button {
   display: inline-block;
-  padding: 22px 54px;
   border-radius: 30px;
   background-color: #ffaf18;
+  padding: 17px 82px 17px 81px;
   color: #020303;
   font-family: inherit;
   font-size: 16px;
   font-weight: bold;
   border: none;
+}
+
+.button-top {
+  padding: 22px 54px;
 }
 
 .main-button:hover {
@@ -226,7 +237,7 @@ body {
 }
 
 .main-bottom-about p {
-  max-width: 385px;
+  max-width: 350px;
   font-size: 16px;
   line-height: 24px;
   color: #ffffff;
@@ -259,25 +270,24 @@ body {
   transform: scale(1.1);
 }
 
-.main-bottom-about-item span {
+.main-bottom-about-item a {
+  text-decoration: none;
   display: inline-block;
   width: 56px;
   height: 56px;
-  background-color: white;
   border-radius: 50%;
+  background-color: white;
+  line-height: 56px;
   text-align: center;
   vertical-align: middle;
 }
 
-.main-bottom-about-item span:active {
-  background-color: #ffaf18;
+.main-bottom-about-item a:visited {
+  background-color: #bebebe;
 }
 
-.main-bottom-about-item a {
-  text-decoration: none;
-  display: inline-block;
-  width: 100%;
-  height: 100%;
+.main-bottom-about-item a:active {
+  background-color: #ffaf18;
 }
 
 .main-bottom-about-item img {
@@ -298,10 +308,16 @@ body {
 /*** footer ***/
 
 .footer {
+  background-color: black;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 35px 0;
 }
 
-.footer p {
+.footer-container p {
   display: inline-block;
   font-size: 12px;
   letter-spacing: 1px;
